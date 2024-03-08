@@ -22,7 +22,6 @@ namespace CheckFile
         {
             IsChanged = true;
             var jsonString = new JsonReader().Read();
-
             var data = new MySerialization().SerializeTo(jsonString);
             PrintMessage.Print("some message", data);
         }

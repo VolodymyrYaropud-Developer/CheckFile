@@ -15,10 +15,10 @@ namespace CheckFile
             {
                 if (!file.IsChanged)
                 {
-                    Thread.Sleep(1000 * data.IntervalInSeconds);
-                    Console.WriteLine($"{message} data {data.dateFormat} interval {data.IntervalInSeconds}");
-                }
+                Thread.Sleep(1000 * data.IntervalInSeconds);
+                Console.WriteLine($"{message} data {data.dateFormat} interval {data.IntervalInSeconds}");
             }
         }
     }
+}
 }
